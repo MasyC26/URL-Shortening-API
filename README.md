@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [(https://www.frontendmentor.io/challenges/url-shortening-api-landing-page-2ce3ob-G?tab=report)]
+- Live Site URL: [(https://url-shortening-api-lake-six.vercel.app/)]
 
 ## My process
 
@@ -64,5 +64,5 @@ As usual, I used AI to speed up the code debugging process. The AI was particula
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [Masy Cedric(Sayan.Code)](https://sayan-code.vercel.app/)
+- Frontend Mentor - [@MasyC26](https://www.frontendmentor.io/profile/MasyC26)
