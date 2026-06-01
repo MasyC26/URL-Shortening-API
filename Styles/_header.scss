@@ -1,0 +1,187 @@
+@use "variables" as *;
+
+header {
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 4rem 4rem;
+
+    .logo-link {
+        margin-right: 4rem; 
+    }
+
+    nav.nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-grow: 1; 
+
+        ul.nav-links {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+
+            li {
+                list-style: none;
+
+                a {
+                    text-decoration: none;
+                    color: $gray-400;
+                    font-weight: 500;
+                    transition: 0.3s;
+
+                    &:hover {
+                        color: $gray-950;
+                    }
+                }
+            }
+        }
+
+        div.login-signup {
+            display: flex;
+            align-items: center;
+
+            a.login-button {
+                text-decoration: none;
+                color: $gray-400;
+                font-weight: 500;
+
+                &:hover {
+                    color: $gray-950;
+                }
+            }
+
+            a.signup-button {
+                margin-left: 3rem;
+                color: white;
+                background-color: $Blue-400;
+                text-decoration: none;
+                padding: 10px 30px;
+                border-radius: 50px;
+                transition: 0.3s;
+
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}
+
+
+.menu-toggle,
+.menu-close {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+.menu-toggle img,
+.menu-close img {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+
+    header {
+        padding: 2rem;
+        justify-content: space-between;
+        
+        .logo-link {
+            margin-right: 0;
+        }
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+    nav.nav-container {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(0.9);
+        width: 85%; 
+        max-width: 400px; 
+        background-color: $purple-950; 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        border-radius: 10px;
+        padding: 2.5rem 2rem;
+        z-index: 1000;
+        
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    nav.nav-container.active {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translate(-50%, -50%) scale(1);
+    }
+
+    .menu-close {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+        background-color: $purple-950;
+
+    }
+
+    nav.nav-container {
+
+        ul.nav-links {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 1.5rem;
+            padding: 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+            padding-bottom: 1.5rem;
+
+            li a {
+                color: white; 
+                font-weight: 700;
+                
+                &:hover {
+                    color: $gray-400;
+                }
+            }
+        }
+
+        div.login-signup {
+            flex-direction: column;
+            width: 100%;
+            gap: 1.5rem;
+
+            a.login-button {
+                color: white; 
+                text-align: center;
+                width: 100%;
+                display: block; 
+                font-weight: 700;
+            }
+
+            a.signup-button {
+                margin-left: 0;
+                text-align: center;
+                width: 100%;
+                display: block; 
+                box-sizing: border-box;
+                font-weight: 700;
+                position: relative;
+                right: 25px;
+            }
+        }
+    }
+}

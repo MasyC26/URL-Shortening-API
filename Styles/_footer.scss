@@ -1,0 +1,98 @@
+@use "variables" as *;
+
+footer {
+    background-color: $gray-900;
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    min-height: 250px;
+    padding: 0 20px;
+    
+    img {
+        filter: brightness(0) invert(1);
+    }
+
+    div.links-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 4rem;
+
+        div.links-box {
+            h4 {
+                color: white;
+                font-weight: 700;
+                margin-bottom: 1rem;
+            }
+
+            ul {
+                li {
+                    list-style-type: none;
+                    &:not(:last-child) {
+                        margin-bottom: 0.5rem;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: white;
+                        font-weight: 500;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            color: $Blue-400;
+                        }
+                    }
+                }
+            }
+        }
+
+        div.align {
+            position: relative;
+            top: 13px;
+        }
+    }
+
+    div.social-links {
+        a {
+            transition: 0.3s ease;
+            &:not(:last-child) {
+                margin-right: 1rem;
+            }
+
+            img {
+
+                
+                &:hover {
+                    
+                    filter: invert(61%) sepia(80%) saturate(464%) hue-rotate(134deg) brightness(93%) contrast(93%);
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    footer {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        padding: 50px 0;
+
+        div.links-container {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            div.align {
+                position: static;
+            }
+        }
+    }
+
+}

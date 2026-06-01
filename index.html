@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="Styles/style.css">
+    <title>Shortly</title>
+</head>
+<body>
+
+<header>
+
+    <a href="index.html" class="logo-link"> <!--Main Logo-->
+        <img src="images/logo.svg" alt="logo" class="header-logo">
+    </a>
+
+    
+    <button class="menu-toggle" id="menu-open"> <!--hamburger menu-->
+        <img src="images/hamburger-menu-more-svgrepo-com.svg" alt="open menu">
+    </button>
+
+    
+    <nav class="nav-container" id="nav">
+
+
+        <button class="menu-close" id="menu-close"> <!--close menu-->  
+            <img src="images/close-svgrepo-com.svg" alt="close menu">
+        </button>
+
+        <ul class="nav-links"> <!--nav container-->
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Ressources</a></li>
+        </ul>
+
+        <div class="login-signup">
+            <a href="#" class="login-button">Login</a>
+            <a href="#" class="signup-button">Sign Up</a>
+        </div>
+
+    </nav>
+
+</header>
+
+<main>
+    <section class="hero">
+
+        <div class="text">
+
+            <h1>More than just shorter links</h1>
+            <p>Build your brand's recognition and get detailed insights on how your links are performing</p>
+            <a href="#">Get Started</a>
+
+        </div>
+
+        <div class="image-container">
+            <img src="images/illustration-working.svg" alt="working illustration" class="working-image">
+        </div>
+
+    </section>
+
+    <form id="shortener-form">
+        <div class="input-group">
+            <input
+                type="text"
+                id="link"
+                placeholder="Shorten a link here"
+            >
+            <p id="error-message"></p>
+        </div>
+
+        <button type="submit" class="short-btn">
+            Short it!
+        </button>
+    </form>
+
+    <div id="shortened-links"></div>
+
+    <section class="statistics">
+
+        <div class="intro">
+            <h2>Advanced Statistics</h2>
+            <p class="main">Track how your links are performing accros the web with our advanced statistics dashboard</p>
+        </div>
+        
+        <div class="statistics-container"> <!--Statistic-->
+
+            <div class="statistics-box">
+
+                <img src="images/icon-brand-recognition.svg" alt="">
+                <h3>Brand Recognition</h3>
+                <p class="description">boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+
+
+            </div>
+            <div class="statistics-box"> <!--Statistic box container-->
+
+                <img src="images/icon-detailed-records.svg" alt="">
+                <h3>Detailed Records</h3>
+                <p class="description">Gain insights into who is clicking in your links. Knowing when and where people engage with your content helps inform better decisions.</p>
+
+            </div>
+            <div class="statistics-box">
+
+                <img src="images/icon-fully-customizable.svg" alt="">
+                <h3>Fully Customizable</h3>
+                <p class="description">Improve brand awarness and content discoverability through customizable links, supercharging audience engagement.</p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="boost">
+        <h2>Boost your links today</h2>
+        <a href="#">Get Started</a>
+    </section>
+</main>
+
+<footer>
+    <img src="images/logo.svg" alt="">
+
+    <div class="links-container">
+
+        <div class="links-box">
+
+            <h4>Features</h4>
+            <ul>
+
+                <li><a href="">Link Shortening</a></li>
+                <li><a href="">Branded links</a></li>
+                <li><a href="">Analytics</a></li>
+
+            </ul>
+
+        </div>
+        <div class="links-box">
+
+            <h4>Resources</h4>
+            <ul>
+
+                <li><a href="">Blog</a></li>
+                <li><a href="">Developpers</a></li>
+                <li><a href="">Support</a></li>
+
+            </ul>
+
+        </div>
+        <div class="links-box align">
+
+            <h4>Company</h4>
+            <ul>
+
+                <li><a href="">About</a></li>
+                <li><a href="">Our teams</a></li>
+                <li><a href="">Carreers</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="social-links">
+        <a href=""><img src="images/icon-facebook.svg" alt=""></a>
+        <a href=""><img src="images/icon-twitter.svg" alt=""></a>
+        <a href=""><img src="images/icon-pinterest.svg" alt=""></a>
+        <a href=""><img src="images/icon-instagram.svg" alt=""></a>
+    </div>
+</footer>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
